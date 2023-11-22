@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Randomizer Game</title>
+  <style>
+    /* Some basic styling for display */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    table {
+      margin: auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Randomizer Game</h1>
+  <hr>
+  <button onclick="startGame()" style="background-color: red; height: 30px; width: 80px; padding: 20px ;">Start </button>
+  <table id="result"></table>
+
+ 
+
+
+ 
+
+
+  <script>
+    function startGame() {
+      const types = ['waifu', 'food', 'game console', 'gender', 'kidtype', 'animalType', 'furrytype', 'jobtype', 'girlfriendorboyfreindtype', 'numberofkidtypes', 'agetype'];
+      const waifuExamples = ['sasta man', 'makima', 'hinata', 'zoro'];
+      const foodExamples = ['Pizza', 'Sushi', 'Burger'];
+      const consoleExamples = ['PlayStation', 'Xbox', 'Nintendo Switch','atari','sasta console','very poor man :('];
+      const genderExamples = ['trans', 'crossiant', 'transman', 'transwoman', 'attack helicopter'];
+      const kidtypeExamples = ['fortnite kid', 'football kid', 'roblox kid', 'spoiled kid', 'QUIET KID'];
+      const animalExamples = ['fatbear', 'freddie', 'bigmanfurry', 'kill furries', 'i have no ideas anymore lol'];
+      const furrytypeExamples = ['fox', 'wolf', 'raccoon', 'otter', 'tiger'];
+      const jobtypeExamples = ['prostitute', 'r34 maker', 'hitman', 'jobless and lonely lol', 'drug dealer'];
+      const girlfriendorboyfreindtypeExamples = ['girlfriend', 'boyfriend'];
+      const numberofkidtypesExamples = ['10', '25', '50', '123456789086544 kids and how the hell did that work'];
+      const agetypeExamples = ['100', '2 months', 'ded', '-255 years'];
+
+      const resultTable = document.getElementById('result');
+      resultTable.innerHTML = ''; // Clear previous results
+
+      types.forEach(type => {
+        let randomExample;
+        switch (type) {
+          case 'waifu':
+            randomExample = waifuExamples[Math.floor(Math.random() * waifuExamples.length)];
+            break;
+          case 'food':
+            randomExample = foodExamples[Math.floor(Math.random() * foodExamples.length)];
+            break;
+          case 'game console':
+            randomExample = consoleExamples[Math.floor(Math.random() * consoleExamples.length)];
+            break;
+          case 'gender':
+            randomExample = genderExamples[Math.floor(Math.random() * genderExamples.length)];
+            break;
+          case 'kidtype':
+            randomExample = kidtypeExamples[Math.floor(Math.random() * kidtypeExamples.length)];
+            break;
+          case 'animalType':
+            randomExample = animalExamples[Math.floor(Math.random() * animalExamples.length)];
+            break;
+          case 'furrytype':
+            randomExample = furrytypeExamples[Math.floor(Math.random() * furrytypeExamples.length)];
+            break;
+          case 'jobtype':
+            randomExample = jobtypeExamples[Math.floor(Math.random() * jobtypeExamples.length)];
+            break;
+          case 'girlfriendorboyfreindtype':
+            randomExample = girlfriendorboyfreindtypeExamples[Math.floor(Math.random() * girlfriendorboyfreindtypeExamples.length)];
+            break;
+          case 'numberofkidtypes':
+            randomExample = numberofkidtypesExamples[Math.floor(Math.random() * numberofkidtypesExamples.length)];
+            break;
+          case 'agetype':
+            randomExample = agetypeExamples[Math.floor(Math.random() * agetypeExamples.length)];
+            break;
+          default:
+            randomExample = 'Unknown type';
+        }
+
+        const row = resultTable.insertRow();
+        const cell1 = row.insertCell(0);
+        const cell2 = row.insertCell(1);
+        cell1.innerHTML = `${type}:`;
+        cell2.innerHTML = randomExample;
+      });
+    }
+    
+  </script>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <hr>
+  <h6>Made by Shreyansh Goswami </h6>
+</body>
+</html>
